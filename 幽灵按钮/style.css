@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #273346;
+}
+
+.box{
+	position: absolute;
+	width: 900px;
+	height: 280px;
+	left: 50%;
+	top: 50%;
+	margin-left: -450px;
+	margin-top: -140px;
+}
+
+.box .link{
+	width: 200px;
+	height: 280px;
+	margin: 0 50px;
+	float: left;
+}
+
+.link .icon{
+	display: inline-block;	/*span内联元素需要设置显示*/
+	width: 100%;
+	height: 190px;
+}
+
+.link-mission .icon{
+	background: url("img/mission.png") no-repeat center center;
+}
+
+.link-play .icon{
+	background: url("img/play.png") no-repeat center center;
+}
+
+.link-touch .icon{
+	background: url("img/touch.png") center center;
+}
+
+.link .icon{
+	transition: 0.3s linear;
+}
+.link .icon:hover{
+	transform: rotate(360deg) scale(1.2);
+}
+
+.button{
+	display: block;
+	width: 180px;
+	height: 50px;
+	text-decoration: none;
+	line-height: 50px;
+	color: #2DCB70;
+    font-family: '微软雅黑', serif;
+	font-size: 20px;
+	font-weight: bolder;
+	border: 2px solid rgba(255,255,255,0.6);
+	padding-left: 20px;
+	margin: 0 auto;
+	box-sizing: border-box;		/*固定盒子大小为初始值180x50*/
+	background: url("img/arrow.png") no-repeat 120px center;
+}
+
+.button{
+	transition: 0.4s ease;
+}
+.button:hover{
+	border: 2px solid rgba(255,255,255,1);
+	background-position: 140px center;
+}
