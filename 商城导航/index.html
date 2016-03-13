@@ -44,7 +44,7 @@
           		border: 1px solid #DDD;
 	        	border-right: 0;
 	        	box-shadow: 0 0 8px #DDD;
-	          	background: none;
+	          	background-image: none;
 	        }
 	        .topmenu li a
 	        {
@@ -57,6 +57,29 @@
 	            font-weight: bold;
 	            color: #e4393c;
 	        }
+	        .submenu{
+	        	display: block;
+	        	width: 715px;
+	        	left: 220px;
+	        	position: absolute;
+	        	top: 40px;
+	        	border: 1px solid #DDDDDD;
+	        	z-index: 4;
+	        	background: white;
+	        	box-shadow: 0 0 8px #DDDDDD;
+	        }
+	        .leftdiv{
+	        	background: gray;
+	        	float: left;
+	        	width: 490px;
+	        	margin: 5px;
+	        }
+	        .rightdiv{
+	        	background: blue;
+	        	float: left;
+	        	width: 200px;
+	        	margin: 5px;
+	        }
     	</style>
 	</head>
 	<body>
@@ -64,7 +87,20 @@
 	        <div class="toptitle">
 	        	全部商品分类
 	        </div>
-	        <li><a href="#">图书、音像、数字商品</a></li>
+	        <li><a href="#">图书、音像、数字商品</a>
+	        	<div class="submenu">
+	        		<div class="leftdiv">
+	        			左侧二级分类<br />
+	        			左侧二级分类<br />
+	        			左侧二级分类<br />
+	        			左侧二级分类<br />
+	        			左侧二级分类<br />
+	        		</div>
+	        		<div class="rightdiv">
+	        			右侧品牌推荐
+	        		</div>
+	        	</div>
+	        </li>
 			<li><a href="#">家用电器</a></li>
 	        <li><a href="#">手机、数码</a></li>
 	        <li><a href="#">电脑、办公</a></li>
