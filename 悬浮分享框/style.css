@@ -1,0 +1,6 @@
+#div1 {
+	width: 150px;height: 200px;background: green;position:absolute;left: -150px;
+}
+#div1 span {
+	width: 20px;height: 60px;background: brown;position:absolute;right: -20px;top: 70px;
+}
